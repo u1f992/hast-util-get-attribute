@@ -14,7 +14,7 @@
   "author": "Koutaro Mukai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/u1f992/hast-util-get-attribute.git"
+    "url": "git+https://github.com/u1f992/hast-util-get-attribute.git"
   },
   "homepage": "https://github.com/u1f992/hast-util-get-attribute",
   "license": "MIT",
