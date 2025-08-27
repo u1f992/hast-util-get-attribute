@@ -1,6 +1,6 @@
 {
   "name": "hast-util-get-attribute",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "getAttribute and hasAttribute for hast Element type.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
