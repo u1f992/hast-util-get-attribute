@@ -26,6 +26,7 @@ jobs:
           npm run build
           npm run test
           npm pack
+          npm publish --dry-run
       - run: |
           gh release create "${VERSION}" --title "${VERSION}" --generate-notes
           gh release upload "${VERSION}" *.tgz
@@ -33,7 +34,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
       - run: |
           npm whoami
-          npm publish --dry-run
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
