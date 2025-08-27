@@ -11,12 +11,14 @@ jobs:
     env:
       VERSION: ${{ github.ref_name }}
     permissions:
-      contents: write  # to generate release note
+      contents: write # to generate release note
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+          cache: "npm"
       - run: |
           npm ci
           npm run lint
@@ -30,6 +32,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
       - run: |
-          npm publish
+          npm whoami
+          npm publish --dry-run
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
