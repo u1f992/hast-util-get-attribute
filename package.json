@@ -1,0 +1,30 @@
+{
+  "name": "hast-util-get-attribute",
+  "version": "0.1.0",
+  "description": "getAttribute and hasAttribute for hast Element type.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint --fix src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "Koutaro Mukai",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/hast": "^2.3.10",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
+    "hast-util-from-html": "^1.0.2",
+    "hast-util-to-html": "^8.0.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  },
+  "dependencies": {
+    "property-information": "^7.1.0"
+  }
+}
