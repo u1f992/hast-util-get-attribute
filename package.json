@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint --fix src/**/*.ts",
-    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint --fix \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "build": "tsc",
-    "test": "node --test"
+    "test": "node --test \"dist/**/*.test.js\""
   },
   "keywords": [],
   "author": "Koutaro Mukai",
