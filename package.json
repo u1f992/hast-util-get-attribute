@@ -1,8 +1,9 @@
 {
   "name": "hast-util-get-attribute",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "getAttribute and hasAttribute for hast Element type.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint --fix src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
@@ -11,6 +12,11 @@
   },
   "keywords": [],
   "author": "Koutaro Mukai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/u1f992/hast-util-get-attribute.git"
+  },
+  "homepage": "https://github.com/u1f992/hast-util-get-attribute",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
